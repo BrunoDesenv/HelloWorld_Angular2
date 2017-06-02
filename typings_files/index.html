@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://www.w3ii.com/angular2/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Hello World</title>
+    <script src="./es6-shim.min.js.download"></script>
+    <script src="./system-polyfills.js.download"></script>
+    <script src="./angular2-polyfills.js.download"></script>
+    <script src="./system.js.download"></script>
+    <script src="./typescript.js.download"></script>
+    <script src="./Rx.js.download"></script>
+    <script src="./angular2.dev.js.download"></script>
+    <script>
+      System.config({
+        transpiler: 'typescript',
+        typescriptOptions: { emitDecoratorMetadata: true },
+        packages: {'app': {defaultExtension: 'ts'}}
+      });
+      System.import('/angular2/src/app/environment_main')
+            .then(null, console.error.bind(console));
+    </script>
+  </head>
+<body>
+   <my-app>Loading...</my-app>
+
+
+</body></html>
